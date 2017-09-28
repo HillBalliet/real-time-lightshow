@@ -1,14 +1,22 @@
 // E155 Final Project
+// micData.c
 // Hill Balliet - wballiet@g.hmc.edu - Dec 2, 2016
+//
+// Stores and processes the song data using a low pass filter to isolate bass
+// frequencies and a moving average filter to find the envelope of the audio.
+//
+// Also sorts the incoming data points by amplitude so that quantile information
+// can easily be found later.
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
 #define SAMPERSEC 2000
-#define DATALENGTH (int)(SAMPERSEC*1.2)
+#define DATALENGTH 2400 
 #define NUMTOAS 25
 #define OFFSET 380
+#define Y3LENGTH 1035020
 
 typedef struct node {
     double val;
@@ -24,6 +32,8 @@ typedef struct linkedList {
 
 // Keep track of time of arrivals
 linkedList_t Toas;
+
+FILE *fp;
 
 // Keep track of mic data, filtered mic data, and ordered filtered mic data
 linkedList_t DataShiftReg;
@@ -84,7 +94,9 @@ void addOrdered(double *newData, double *oldData) {
     double *temp[DATALENGTH];
     char added = 0;
 
-    for (int oldDataIndex = DATALENGTH - SquarAvData.numSamples; oldDataIndex < DATALENGTH; oldDataIndex++) {
+    int initial = DATALENGTH - SquarAvData.numSamples;
+
+    for (int oldDataIndex = initial; oldDataIndex < DATALENGTH;oldDataIndex++) {
         if (oldDataIndex == DATALENGTH - 1 && !added) {
             temp[newDataIndex] = newData;
         }
@@ -142,9 +154,9 @@ double bassFilter() {
     const int numFilterPoints = 11;
     double y = 0;
 
-    double b[numFilterPoints] = {0.0023828536056377,-0.0130958334492431,0.0372141533382333,-0.0700301623207206,0.0983815662084311,-0.1093276527751890,0.0983815662084310,-0.0700301623207205,0.0372141533382332,-0.0130958334492431,0.0023828536056377};
+    double b[11] = {0.0023828536056377,-0.0130958334492431,0.0372141533382333,-0.0700301623207206,0.0983815662084311,-0.1093276527751890,0.0983815662084310,-0.0700301623207205,0.0372141533382332,-0.0130958334492431,0.0023828536056377};
  
-    double a[numFilterPoints] = {1.0000000000000000,-8.1883658956990786,31.3051598439003200,-73.3201552438257380,116.2455336759196882,-130.1807939032020158,104.2045701322850846,-58.8532949438235136,22.4489181172146317,-5.2255736205161751,0.5644254019455265};
+    double a[11] = {1.0000000000000000,-8.1883658956990786,31.3051598439003200,-73.3201552438257380,116.2455336759196882,-130.1807939032020158,104.2045701322850846,-58.8532949438235136,22.4489181172146317,-5.2255736205161751,0.5644254019455265};
 
     
     // Apply the filter to the current data as described above
@@ -179,7 +191,7 @@ double squarAvFilter() {
         curNode = curNode->prev;
     }
 
-    return sum/(double)fmin(BassData.numSamples, numPoints);
+    return sum/fmin(BassData.numSamples, numPoints);
 }
 
 void storeSample(int micData) {
@@ -220,9 +232,8 @@ void storeSample(int micData) {
         free(oldSquarAvData);
     }
     else {
-        node_t *oldData = NULL;
 
-        addOrdered(&(newSquarAvData->val), &(oldData->val));
+        addOrdered(&(newSquarAvData->val), NULL);
     }
 
     CurTime++;
