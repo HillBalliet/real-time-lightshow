@@ -11,17 +11,28 @@ Wall Adapter:
 
 MOSFETs:
     https://www.digikey.com/product-detail/en/diodes-incorporated/DMP2215L-7/DMP2215LDICT-ND/1774242
+    Manufacturer: Diodes Incorporated
+    Manufacturer PN: DMP2215L-7
     Type: P channel
-    Price: $0.39
+    Price: $0.32 at 10
     Vds: 20V
     Rds On: 100mOhm
     Drive voltage: 2.5, 4.5V
     Continuous Current: 2.7A
 
     https://www.digikey.com/product-detail/en/rohm-semiconductor/RU1J002YNTCL/RU1J002YNTCLCT-ND/5042587
+    Manufacturer: Rohm Semiconductor
+    Manufacturer PN: RU1J002YNTCL
     Type: N channel
     Price: $0.23
     Vds: 50V
     Rds On: 2.2Ohm
     Drive voltage: 0.9, 4.5V
     Continuous Current: 200mA
+
+Current limiting resistors (for n-channel mosfet)
+    Manufacturer: TE Connectivity Passive Product
+    Manufacturer PN: CRG0402J1K0
+    Resistance: 1 kOhm
+    Power Rating: 1/16 W
+    Footprint: 0402
