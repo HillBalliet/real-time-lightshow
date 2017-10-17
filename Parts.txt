@@ -3,6 +3,7 @@ Wall Adapter:
     Price: $13.54
     Output Voltage: 5V
     Output Power: 20W
+    Mate: https://www.digikey.com/product-detail/en/mpd-memory-protection-devices/EJ503A/EJ503A-ND/5431753
 
     https://www.digikey.com/product-detail/en/triad-magnetics/WSU050-1500/237-1417-ND/3094943
     Price: $7.75
@@ -36,3 +37,9 @@ Current limiting resistors (for n-channel mosfet)
     Resistance: 1 kOhm
     Power Rating: 1/16 W
     Footprint: 0402
+
+MuddPi Connector
+    URL: https://www.digikey.com/product-detail/en/sullins-connector-solutions/PPPC201LFBN-RC/S7053-ND/810192
+
+RasPi Connector
+    URL: https://www.digikey.com/product-detail/en/sullins-connector-solutions/SFH11-PBPC-D10-ST-BK/S9197-ND/1990090
