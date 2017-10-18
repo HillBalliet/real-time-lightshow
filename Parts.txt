@@ -42,4 +42,4 @@ MuddPi Connector
     URL: https://www.digikey.com/product-detail/en/sullins-connector-solutions/PPPC201LFBN-RC/S7053-ND/810192
 
 RasPi Connector
-    URL: https://www.digikey.com/product-detail/en/sullins-connector-solutions/SFH11-PBPC-D10-ST-BK/S9197-ND/1990090
+    URL: https://www.digikey.com/product-detail/en/sullins-connector-solutions/SFH11-PBPC-D20-ST-BK/S9200-ND/1990093
