@@ -43,3 +43,11 @@ MuddPi Connector
 
 RasPi Connector
     URL: https://www.digikey.com/product-detail/en/sullins-connector-solutions/SFH11-PBPC-D20-ST-BK/S9200-ND/1990093
+
+Board Vendor
+    URL: http://docs.oshpark.com/services/
+    Pricing: $5 per in^2 for 3 boards
+    Shipping time: 12 days
+    Trace Space: 6 mil
+    Drill Size: 10 mil
+    Annular Ring: 5 mil

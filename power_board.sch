@@ -563,7 +563,7 @@ F 3 "" H 2100 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2350 3100 2    60   Input ~ 0
-R1
+R2
 Connection ~ 1650 2900
 Wire Wire Line
 	2100 2600 2100 2700
@@ -662,7 +662,7 @@ F 3 "" H 2100 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2350 4850 2    60   Input ~ 0
-R1
+R3
 Connection ~ 1650 4650
 Wire Wire Line
 	2100 4350 2100 4450
@@ -761,7 +761,7 @@ F 3 "" H 2100 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2350 6550 2    60   Input ~ 0
-R1
+R4
 Connection ~ 1650 6350
 Wire Wire Line
 	2100 6050 2100 6150
@@ -860,7 +860,7 @@ F 3 "" H 4200 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4450 1400 2    60   Input ~ 0
-R1
+G1
 Connection ~ 3750 1200
 Wire Wire Line
 	4200 900  4200 1000
@@ -959,7 +959,7 @@ F 3 "" H 4200 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4450 3100 2    60   Input ~ 0
-R1
+G2
 Connection ~ 3750 2900
 Wire Wire Line
 	4200 2600 4200 2700
@@ -1058,7 +1058,7 @@ F 3 "" H 4200 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4450 4850 2    60   Input ~ 0
-R1
+G3
 Connection ~ 3750 4650
 Wire Wire Line
 	4200 4350 4200 4450
@@ -1157,7 +1157,7 @@ F 3 "" H 4200 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4450 6550 2    60   Input ~ 0
-R1
+G4
 Connection ~ 3750 6350
 Wire Wire Line
 	4200 6050 4200 6150
@@ -1256,7 +1256,7 @@ F 3 "" H 6250 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 6500 1400 2    60   Input ~ 0
-R1
+B1
 Connection ~ 5800 1200
 Wire Wire Line
 	6250 900  6250 1000
@@ -1355,7 +1355,7 @@ F 3 "" H 6250 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 6500 3100 2    60   Input ~ 0
-R1
+B2
 Connection ~ 5800 2900
 Wire Wire Line
 	6250 2600 6250 2700
@@ -1454,7 +1454,7 @@ F 3 "" H 6250 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 6500 4850 2    60   Input ~ 0
-R1
+B3
 Connection ~ 5800 4650
 Wire Wire Line
 	6250 4350 6250 4450
@@ -1553,7 +1553,7 @@ F 3 "" H 6250 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 6500 6550 2    60   Input ~ 0
-R1
+B4
 Connection ~ 5800 6350
 Wire Wire Line
 	6250 6050 6250 6150
