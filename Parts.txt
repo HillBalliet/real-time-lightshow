@@ -44,6 +44,9 @@ MuddPi Connector
 RasPi Connector
     URL: https://www.digikey.com/product-detail/en/sullins-connector-solutions/SFH11-PBPC-D20-ST-BK/S9200-ND/1990093
 
+LED Connector
+    Stock room 16 pin header
+
 Board Vendor
     URL: http://docs.oshpark.com/services/
     Pricing: $5 per in^2 for 3 boards
