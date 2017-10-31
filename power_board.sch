@@ -196,25 +196,25 @@ $EndComp
 Wire Wire Line
 	10200 1000 10700 1000
 Text GLabel 9900 1900 0    60   Input ~ 0
-R_Control_1
+R_Control_4
 Text GLabel 9900 1100 0    60   Input ~ 0
 G_Control_1
 Text GLabel 9900 1500 0    60   Input ~ 0
 B_Control_1
 Text GLabel 10600 2000 0    60   Input ~ 0
-R_Control_2
+R_Control_3
 Text GLabel 10600 1200 0    60   Input ~ 0
 G_Control_2
 Text GLabel 10600 1600 0    60   Input ~ 0
 B_Control_2
 Text GLabel 9900 2100 0    60   Input ~ 0
-R_Control_3
+R_Control_2
 Text GLabel 9900 1300 0    60   Input ~ 0
 G_Control_3
 Text GLabel 9900 1700 0    60   Input ~ 0
 B_Control_3
 Text GLabel 10600 2200 0    60   Input ~ 0
-R_Control_4
+R_Control_1
 Text GLabel 10600 1400 0    60   Input ~ 0
 G_Control_4
 Text GLabel 10600 1800 0    60   Input ~ 0
@@ -474,7 +474,7 @@ U 1 1 59E6A3FD
 P 9250 3350
 F 0 "J2" H 9250 3550 50  0000 C CNN
 F 1 "Power Supply" H 9250 3150 50  0000 C CNN
-F 2 "Connect:BARREL_JACK" H 9250 3350 50  0001 C CNN
+F 2 "wall:BARREL_JACK" H 9250 3350 50  0001 C CNN
 F 3 "" H 9250 3350 50  0001 C CNN
 	1    9250 3350
 	1    0    0    -1  
